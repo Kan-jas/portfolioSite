@@ -1,9 +1,8 @@
 @charset "UTF-8";
+/* ------------------------------------------------------- */
+/* 基本設定です。 */
+/* ------------------------------------------------------- */
 
-/*
-Theme Name: graduation
-*/
-/* 基本設定 */
 h1 {
   font-size: 90px;
   font-weight: bold;
@@ -25,15 +24,15 @@ header {
   position: fixed;
   z-index: 100;
   padding: 10px;
-  height: 100%;
+  height:50px ;
+  width: 100%;
   background: rgb(255, 255, 255);
   top: 0;
-  right: 0;
 }
 
 body {
+  width: 350vw;
   height: 100vh;
-  width: 300vw;
   writing-mode: vertical-rl;
   font-family: "はれのそら明朝", "黎ミンY30 M", sans-serif;
   src: url("../others/hare");
@@ -41,43 +40,47 @@ body {
 }
 
 section {
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  top: 0;
-  bottom: 0;
   margin: auto;
 }
 
-/* #nav-drawer {
+/* ------------------------------------------------------- */
+/* ハンバーガーメニュー部分です。 */
+/* ------------------------------------------------------- */
+
+#nav-drawer {
   position: relative;
 }
 
-/*チェックボックス等は非表示に*/
-/* .nav-unshown {
+/* チェックボックス等は非表示に */
+.nav-unshown {
   display: none;
-} */
+}
 
-/*アイコンのスペース*/
-/* #nav-open {
+/* アイコンのスペース */
+#nav-open {
   display: inline-block;
   width: 40px;
   height: 20px;
   vertical-align: middle;
-} */
+}
 
-/*ハンバーガーの形をCSSで表現*/
-/* #nav-open span, #nav-open span:before, #nav-open span:after {
+/* ハンバーガーの形をCSSで表現 */
+ #nav-open span, #nav-open span:before, #nav-open span:after {
   position: absolute;
   height: 2px;
-  /*線の太さ*/
-  /* width: 35px; */
-  /*長さ*/
-  /* background: #555; */
-  /* display: block; */
-  /* cursor: pointer; */
-  /* content: ''; */
-/* }  */
+  線の太さ
+  width: 35px;
+  長さ
+  background: #555;
+  display: block;
+  cursor: pointer;
+  content: '';
+ }
 
-/* #nav-open span:before {
+ #nav-open span:before {
   bottom: -8px;
 }
 
@@ -86,7 +89,7 @@ section {
 }
 
 /*閉じる用の薄黒箇所*/
-/* #nav-close {
+ #nav-close {
   display: none;
   position: fixed;
   z-index: 99;
@@ -97,470 +100,56 @@ section {
   background: black;
   opacity: 0;
   transition: .3s ease-in-out;
-}  */
-
-/*メニューの中身*/
-/* #nav-content {
-  overflow: auto;
-  position: fixed;
-  top: -100vh;
-  right: 0;
-  z-index: 9999;
-  height: 100%;
-  width: 90%;
-  max-width: 300px;
-  /*最大幅（*/
-  /* height: 50%; */
-  /* transition: .3s ease-in-out; */
-/* }  */
-
-/* #nav-content a {
-  text-decoration: none;
-  display: flex;
-  height: 30%;
-  margin: 5px 10px;
-  padding: 5px 0;
-  font-feature-settings: "palt";
-  background-color: rgb(251, 251, 251);
-  color: black;
-} */
-
-/*チェックがついたら表示させる*/
-/* #nav-input:checked~#nav-close {
-  display: block;
-  opacity: .5;
-} */
-
-/* #nav-input:checked~#nav-content {
-  top: 0;
-  box-shadow: 6px 0 25px rgba(0, 0, 0, .15);
-} */
-
-/* .header-logo-menu {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  display: -moz-flex;
-  display: -o-flex;
-  display: -webkit-flex;
-  display: -ms-flex;
-  flex-direction: row;
-  -moz-flex-direction: row;
-  -o-flex-direction: row;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-} */
-
-/*ロゴやサイトタイトルをセンタリング*/
-/* .logo-area { */
-  /* text-align: center; */
-  /* margin: auto; */
-  /* transform: rotate(360deg); */
-/* } */
-
-/* ファーストビューから最後までの背景 */
-/* .background {
-  width: 100vw;
-  height: 100vh;
+}
+/* ------------------------------------------------------- */
+/*背景部分です。 */
+/* ------------------------------------------------------- */
+.background {
+  /* background-color: rgb(179, 210, 197);
   position: relative;
-} */
-/*
-#image-a, #image-b {
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
-#image-a {
-  background-image: url("../img/1x/1x/first-view.png");
-  width: 33%;
-  height: 100%;
-  right: 0px;
-} */
-/*
-#image-b {
-  background-image: url("../img/1x/background2.png");
-  width: 267%;
-  height: 100%;
-  right: 33vw;
-}
-
-#first-view, #back-b, #back-c {
-  height: 87.5%;
   width: 100%;
-  z-index: 50;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  opacity: 0.7;
-  overflow: hidden;
+  height: 100%; */
+}
+/* ------------------------------------------------------- */
+/* ファーストビュー部分です。 */
+/* ------------------------------------------------------- */
+
+.first-view{
+  right: 0;
 }
 
-#first-view {
-  background-color: rgb(51, 137, 202);
+.FirstViewImg{
+  background-image: url("../img/first-view.png");
+  background-size: cover;
+  width: 100%;
+  min-width: 1920px;
+  height: 100%;
+  min-height: 1080px;
+  right: 0;
+  z-index: 100000;
 }
 
-#back-b {
-  background-color: #ffff;
+/* ------------------------------------------------------- */
+/* 自己紹介部分です。 */
+/* ------------------------------------------------------- */
+.self-introduction{
   right: 100%;
 }
-
-#back-c {
-  background-color: #8ebbb1;
+/* ------------------------------------------------------- */
+/* ポートフォリオ部分です。 */
+/* ------------------------------------------------------- */
+.works{
   right: 200%;
 }
-
-#scrollValue{
-  font-size: 30px;
-  z-index: 9999;
-  position: fixed;
-  top: 10px;
-  left: 10px;
+/* ------------------------------------------------------- */
+/* お問い合わせ部分です。 */
+/* ------------------------------------------------------- */
+.inquiry{
+  right: 300%;
 }
-
-.move-right{
-  position: fixed;
-  top: 10px;
-  left: 0;
-  height: 1000px;
-  width: 40px;
-  background-color: rgb(93, 199, 30);
-  z-index: 999999;
-}
-/* プロフィール */
-/* .profile {
-  position: absolute;
-  display: flex;
-  z-index: 50;
-  top: 50.5px;
-  bottom: 50.5px;
-  left: 8vw;
-  margin: auto;
-}
-
-#profile-t {
-  position: absolute;
-  top: 0;
-  right: 60px;
-  margin: 0 auto;
-  z-index: 50;
-}
-
-#profile-t>h1, h2 {
-  margin: 0 10px 0 10px;
-} */
-
-/* .my-photo, .profile-text {
-  overflow: hidden;
-  width: 400px;
-  height: 45%;
-  margin: 20px;
-}
-
-.my-photo {
-  background-image: url("../img/1x/profile.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right 35% bottom 88%;
-  position: relative;
-} */
-
-/* ポートフォリオ */
-/* .portfolio {
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  top: 0;
-  bottom: 0;
-  right: 180px;
-  margin: auto;
-  z-index: 50;
-}
-
-.works {
-  position: absolute;
-  right: 60px;
-  height: 100%;
-  width: 30px;
-  font-size: 80px;
-  z-index: 50;
-} */
-
-/* .graphics, .articles {
-  overflow: hidden;
-  writing-mode: vertical-rl;
-  width: 400px;
-  height: 44%;
-  margin: 20px;
-}
-
-.graphics {
-  background-color: rgb(14, 12, 15);
-}
-
-/* コンタクトフォーム (２カラム)*/
-/* #contact {
-  position: absolute;
-  display: flex;
-  width: 87.5vw;
-  height: 90%;
-  top: 0;
-  bottom: 0;
-  right: 180px;
-  margin: auto;
-  writing-mode: vertical-rl;
-}
-
-.form-top, .information {
-  width: 800px;
-  height: 44%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  z-index: 50;
-} */
-
-/* .contact-title {
-  background-color: none;
-  position: absolute;
-  right: 60px;
-  width: 120px;
-  height: 100%;
-  font-size: 80px;
-  font-weight: bold;
-} */
-
-/* .contact-label {
-  width: 80px;
-  height: auto;
-}
-
-#massage {
-  width: 100px;
-  height: auto;
-}
-
-form>div>input {
-  writing-mode: initial;
-  transform: rotate(90deg);
-  transform-origin: top left;
-  margin-right: -245px;
-}
-
-#submit-btn {
-  margin-right: 25px !important;
-} */
-
-/* iphoneX用の設定です。 */
 @media screen and (max-width: 375px) {
-  body {
-    writing-mode: initial;
-    height: 300vh;
-    width: 100vw;
-    margin: auto;
-  }
+  /* ------------------------------------------------------- */
+  /* iphoneX用の設定です。 */
+  /* ------------------------------------------------------- */
 
-  header {
-    width: 335px;
-    height: 20px;
-    padding: 20px;
-    left: 0;
-  }
-
-  h1 {
-    font-size: 60px;
-  }
-
-  h2 {
-    font-size: 40px;
-  }
-
-  h3 {
-    font-size: 30px;
-  }
-
-  section {
-    top: initial;
-    bottom: initial;
-  }
-
-  form>div>input {
-    width: 100%;
-    margin: auto;
-    transform: initial;
-    transform-origin: initial;
-    margin-right: initial;
-  }
-
-  /* 背景画像の設定（デスクトップ向けの設定の初期化） */
-  #image-a, #image-b {
-    background-repeat: no-repeat;
-  }
-
-  #image-a {
-    width: 100vw;
-    height: 50vh;
-  }
-
-  #image-b {
-    top: 1234px;
-    right: 0;
-    left: -827px;
-    bottom: initial;
-    width: 541vw;
-    /* taransform後のheightを指定。height(812px)の約2.5倍相当。 */
-    height: 46vh;
-    /* transform後のwidth指定.iPhoneXでの375px. */
-    background-size: cover;
-    transform: translateX(0px) rotate(-90deg);
-  }
-
-  /* 背景画像の設定（デスクトップ向けの設定の初期化） */
-  .background {
-    height: 300vh;
-  }
-
-  #first-view, #back-b, #back-c {
-    height: 100vh;
-    width: 90vw;
-    right: initial;
-    margin: 0 20px 0 20px;
-    bottom: initial;
-  }
-
-  #first-view {
-    top: 0;
-  }
-
-
-
-  /* ヘッダー画面部分の設定 */
-  .header-logo-menu {
-    width: 95%;
-  }
-
-  #nav-content {
-    left: 0;
-    right: initial;
-    max-width: 150px;
-    height: 100%;
-  }
-
-  #nav-content a {
-    height: 30px;
-  }
-
-  /* ファーストビュー部分の設定 */
-  #profile-t {
-    width: 98%;
-    right: initial;
-    top: 60px;
-    margin: 01%;
-  }
-
-  .profile {
-    width: 100%;
-    height: 100vh;
-    display: block;
-    top: initial;
-    left: initial;
-    top: 500px;
-  }
-
-  .my-photo {
-    width: 90%;
-    margin: 0 5%;
-    height: 20vh;
-  }
-
-  .profile-text {
-    writing-mode: vertical-rl;
-    width: 93%;
-    position: relative;
-    margin: auto;
-  }
-
-  /* ポートフォリオ画面の設定です。 */
-  #back-b {
-    top: 100vh;
-  }
-  .portfolio, .graphics, .works, .articles {
-    display: block;
-    width: 93%;
-    right: initial;
-    margin: auto;
-  }
-  .works {
-    height: 60px;
-  }
-  .portfolio{
-    width: 100%!important;
-    top: 60px;
-  }
-
-  .graphics {
-    height: 150px;
-    width: 93%;
-  }
-
-  .articles {
-    width: 93%;
-  }
-
-  /* 問い合わせ画面の設定です。 */
-  #back-c {
-    display: block;
-    top: 200vh;
-    overflow: hidden;
-  }
-  .contact-title {
-    width: 100%;
-    height: 40px;
-    font-size: 30px;
-    right: initial;
-  }
-  #contact {
-    height: 100%;
-    width: 94%;
-    writing-mode: initial;
-    display: block;
-    padding: 0 3%;
-    top: 40px;
-    bottom: initial;
-    right: initial;
-  } */
-
-  .form-top, .information {
-    width: 100%;
-    height: auto;
-  }
-  .contact-label>input{
-    width: 99%;
-  }
-  .contact-label{
-    width: 100%;
-  }
-
-  #massage {
-    width: 93%;
-    padding: 10px;
-  }
-
-  #submit-btn {
-    display: inline-block;
-    border-width: 0;
-    width: 30%;
-    margin:0 35%;
-    font-weight: bold;
-    padding: 0.25em 0.5em;
-    text-decoration: none;
-    color: #FFF;
-    background: #00bcd4;
-    transition: .4s;
-  } */
 }

@@ -32,7 +32,7 @@ header {
 
 body {
   width: 350vw;
-  height: 100vh;
+  height: 100%;
   writing-mode: vertical-rl;
   font-family: "はれのそら明朝", "黎ミンY30 M", sans-serif;
   src: url("../others/hare");
@@ -110,34 +110,66 @@ section {
   width: 100%;
   height: 100%; */
 }
+
+/* ------------------------------------------------------- */
+/* 遷移用ボタンです。 */
+/* ------------------------------------------------------- */
+.nextPage{
+  height: 100%;
+  width: 80px;
+  position:absolute;
+  left: 0;
+}
+.arrow{
+  display: inline-block;
+  margin: auto;
+}
+
+.arrow::before{
+  content: ' ';
+  width: 40px;
+  height: 40px;
+  border: 0px;
+  border-top: solid 5px rgb(255, 255, 255);
+  border-left: solid 5px rgb(255, 255, 255);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+}
 /* ------------------------------------------------------- */
 /* ファーストビュー部分です。 */
 /* ------------------------------------------------------- */
 
 .first-view{
   right: 0;
-  height: 1080px;
-  width: 1920px;
+  height: 100%;
+  width: 100vw;
 }
 
 .FirstViewImg{
   background-image: url("../img/first-view.png");
   background-size: cover;
-  width: 1920px;
   min-width: 100%;
-  height: 1080px;
   min-height: 100%;
   right: 0;
 }
-.FirstViewImg::before{
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  right: 0;
-  content: ' ';
 
+.FirstViewImgMask{
+  height: 100%;
+  width: 100vw;
+  background-color: rgb(0, 0, 0,0.5);
+}
+
+.FirstViewImgMask h1{
+  width: 120px;
+  height: 500px;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  right: 45%;
+  top:25%;
 }
 /* ------------------------------------------------------- */
 /* 自己紹介部分です。 */

@@ -26,7 +26,6 @@ header {
   padding: 10px;
   height:50px ;
   width: 100%;
-  background: rgb(255, 255, 255);
   top: 0;
 }
 
@@ -47,69 +46,113 @@ section {
 }
 
 /* ------------------------------------------------------- */
-/* ハンバーガーメニュー部分です。 */
+/* メニュー部分です。 */
 /* ------------------------------------------------------- */
 
-#nav-drawer {
-  position: relative;
-}
-
-/* チェックボックス等は非表示に */
-.nav-unshown {
-  display: none;
-}
-
-/* アイコンのスペース */
-#nav-open {
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-  vertical-align: middle;
-}
-
-/* ハンバーガーの形をCSSで表現 */
- #nav-open span, #nav-open span:before, #nav-open span:after {
-  position: absolute;
-  height: 2px;
-  線の太さ
-  width: 35px;
-  長さ
-  background: #555;
-  display: block;
-  cursor: pointer;
-  content: '';
- }
-
- #nav-open span:before {
-  bottom: -8px;
-}
-
-#nav-open span:after {
-  bottom: -16px;
-}
-
-/*閉じる用の薄黒箇所*/
- #nav-close {
-  display: none;
-  position: fixed;
-  z-index: 99;
-  top: 0;
-  right: 0;
+#menu{
   width: 100%;
   height: 100%;
-  background: black;
-  opacity: 0;
-  transition: .3s ease-in-out;
+  background-color: rgb(77, 88, 87,0.4);
+  text-align: center;
+  transition: .4s;
+  z-index: 100;
+  position: fixed;
+  top: -101%;
+}
+
+#menu ul{
+  width: 100%;
+  height: 100%;
+}
+
+#menu li{
+  width: 30%;
+  height: 100%;
+  border-bottom: 0.5px solid #ccc;
+}
+
+#menu li > a{
+    font-size: 32px;
+    color: rgb(255, 255, 255);
+    text-decoration-line: none;
+    list-style: none;
+    background-image:none;
+    padding-left:0;
+
+}
+
+#menu.open{
+  top: 0;
+}
+/* ------------------------------------------------------- */
+/* ハンバーガーメニュー部分です。 */
+/* ------------------------------------------------------- */
+.wrap{
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+#humburger{
+  width: 40px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 101;
+}
+
+#humburger span{
+  display: block;
+  width: 2px;
+  height: 36px;
+  background-color: #000;
+  transition: .4s;
+}
+
+#humburger span:nth-of-type(1){
+  position: absolute;
+  top: 2px;
+  left: 10px;
+}
+
+#humburger span:nth-of-type(2){
+  position: absolute;
+  height: 27px;
+  top: 2px;
+  left: 20px;
+}
+
+#humburger span:nth-of-type(3){
+  position: absolute;
+  height: 18px;
+  top: 2px;
+  left: 30px;
+}
+
+#humburger.active span:nth-of-type(1){
+  top: 2px;
+}
+
+#humburger.active span:nth-of-type(2){
+  top: 11px;
+}
+
+#humburger.active span:nth-of-type(3){
+  top: 20px;
 }
 /* ------------------------------------------------------- */
 /*背景部分です。 */
 /* ------------------------------------------------------- */
 .background {
-  /* background-color: rgb(179, 210, 197);
+  background-image: url("../img/background.jpg");
   position: relative;
-  width: 100%;
-  height: 100%; */
+  background-size: cover;
+  width: 200vw;
+  height: 100%;
+  right: 28.5%;
 }
+
 
 /* ------------------------------------------------------- */
 /* 遷移用ボタンです。 */
@@ -174,9 +217,53 @@ section {
 /* ------------------------------------------------------- */
 /* 自己紹介部分です。 */
 /* ------------------------------------------------------- */
-.self-introduction{
-  right: 100%;
+#self-introduction{
+  background-image: url("../img/blueBack.jpg");
+  width: 100vw;
+  height: 90%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
+
+#profile{
+  width: 28%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.profile-img{
+  background-image: url("../img/profile.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 60%;
+  margin: 16px 16px 16px 16px;
+}
+
+.profile-text{
+  width: 100%;
+  height: 30%;
+}
+
+.technical-skil{
+
+}
+
+.logos{
+
+}
+.links{
+
+}
+
+.twitter-link{
+
+}
+
 /* ------------------------------------------------------- */
 /* ポートフォリオ部分です。 */
 /* ------------------------------------------------------- */

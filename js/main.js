@@ -1,22 +1,30 @@
+$(function() {
 
-$(window).scroll(function() {
-
-  let value = $(this).scrollLeft();
-  $('#scrollValue').text('scrollLeft: '+value);
-
-});
-
-
-$(function(){
-
-  /* TOP-Pageボタン */
-  var topBtn = $('.move-right');
-  topBtn.hide();
-  //スクロールしてトップ
-  topBtn.click(function () {
-      $('body,html').animate({
-          scrollLeft: 0
-      }, -1000);
-      return false;
+  // ハンバーガーメニュー
+  $('#humburger').click(function() {
+    $(this).toggleClass("active");
+    $('#menu').toggleClass("open");
+    $('#main').toggleClass("hide");
   });
+
 });
+// $(window).scroll(function() {
+
+  //   let value = $(this).scrollLeft();
+  //   $('#scrollValue').text('scrollLeft: '+value);
+  //
+  // });
+
+// $(function(){
+//
+//   /* TOP-Pageボタン */
+//   var topBtn = $('.move-right');
+//   topBtn.hide();
+//   //スクロールしてトップ
+//   topBtn.click(function () {
+//       $('body,html').animate({
+//           scrollLeft: 0
+//       }, -1000);
+//       return false;
+//   });
+// });

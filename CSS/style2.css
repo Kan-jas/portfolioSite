@@ -267,14 +267,26 @@ section {
 /* ------------------------------------------------------- */
 /* ポートフォリオ部分です。 */
 /* ------------------------------------------------------- */
-.works{
-  right: 200%;
+#works{
+  background-image: url("../img/worksBackground.jpg");
+  width: 100vw;
+  height: 90%;
+  top: 0;
+  right: 50%;
+  bottom: 0;
+  margin: auto;
 }
 /* ------------------------------------------------------- */
 /* お問い合わせ部分です。 */
 /* ------------------------------------------------------- */
-.inquiry{
-  right: 300%;
+#inquiry{
+  background-image: url("../img/inquiryBackground.jpg");
+  width: 100vw;
+  height: 90%;
+  top: 0;
+  right: 85.6%;
+  bottom: 0;
+  margin: auto;
 }
 @media screen and (max-width: 375px) {
   /* ------------------------------------------------------- */

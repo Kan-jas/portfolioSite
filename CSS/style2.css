@@ -23,8 +23,8 @@ p, a {
 header {
   position: fixed;
   z-index: 100;
-  padding: 10px;
-  height:50px ;
+  padding: 5px;
+  height:30px ;
   width: 100%;
   top: 0;
 }
@@ -89,13 +89,13 @@ section {
 /* ------------------------------------------------------- */
 .wrap{
   position: absolute;
-  top: 20px;
-  left: 40px;
+  top: 5px;
+  left: 10px;
 }
 
 #humburger{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border: 0;
   cursor: pointer;
   position: relative;
@@ -105,29 +105,29 @@ section {
 #humburger span{
   display: block;
   width: 2px;
-  height: 36px;
+  height: 30px;
   background-color: #000;
   transition: .4s;
 }
 
 #humburger span:nth-of-type(1){
   position: absolute;
-  top: 2px;
+  top: 0;
   left: 10px;
 }
 
 #humburger span:nth-of-type(2){
   position: absolute;
-  height: 27px;
-  top: 2px;
-  left: 20px;
+  height: 21px;
+  top: 0;
+  left: 21px;
 }
 
 #humburger span:nth-of-type(3){
   position: absolute;
-  height: 18px;
-  top: 2px;
-  left: 30px;
+  height: 12px;
+  top: 0;
+  left: 32px;
 }
 
 #humburger.active span:nth-of-type(1){
@@ -261,7 +261,7 @@ section {
 }
 
 .twitter-link{
-
+  writing-mode:horizontal-tb;
 }
 
 /* ------------------------------------------------------- */
@@ -288,6 +288,60 @@ section {
   bottom: 0;
   margin: auto;
 }
+
+.contact{
+  height: 97.5%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.contact-label{
+  width: 80px;
+}
+
+label{
+  display: block;
+}
+
+.input-field{
+  writing-mode: initial;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  width: 220px;
+  height: 20px;
+  margin-right: -250px;
+}
+
+#massage{
+  width: 180px;
+  height:440px;
+}
+
+#submit-btn {
+  writing-mode: initial;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  width: 120px;
+  height: 45px;
+  margin-right: 25px;
+  border-bottom-width: 0;
+  border-top-width:0;
+  font-weight: bold;
+  text-decoration: none;
+  border-right: solid 4px #668ad8;
+  border-left: solid 4px #668ad8;
+  color: #668ad8;
+  background: #e1f3ff;
+  transition: .4s;
+}
+
+#submit-btn:hover {
+  background: #668ad8;
+  color: #FFF;
+}
+
+
 @media screen and (max-width: 375px) {
   /* ------------------------------------------------------- */
   /* iphoneX用の設定です。 */

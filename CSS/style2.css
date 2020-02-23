@@ -263,7 +263,9 @@ section {
 .twitter-link{
   writing-mode:horizontal-tb;
 }
+#np2{
 
+}
 /* ------------------------------------------------------- */
 /* ポートフォリオ部分です。 */
 /* ------------------------------------------------------- */
@@ -275,6 +277,25 @@ section {
   right: 50%;
   bottom: 0;
   margin: auto;
+}
+
+.works-part{
+  background-color: rgb(99, 55, 226);
+  display: flex;
+  width: 50%;
+  height: 90%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.work-img{
+
+}
+.explanation-of-work{
+
+}
+.moving-tracker{
+
 }
 /* ------------------------------------------------------- */
 /* お問い合わせ部分です。 */
